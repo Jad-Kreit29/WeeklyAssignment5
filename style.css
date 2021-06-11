@@ -1,6 +1,6 @@
 body {
   background-color: #f8f8ff;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 
 .arrow {
@@ -48,13 +48,30 @@ body {
 }
 
 #circle-diagram {
+  display: block;
+  width: 360px;
+  float: left;
+}
+
+#circle-diagram2 {
+  display: none;
   width: 360px;
   float: left;
 }
 
 #formula-image1 {
+  display: block;
   position: relative;
   top: 110px;
+  left: 50px;
+  width: 300px;
+  float: left;
+}
+
+#formula-image2 {
+  display: none;
+  position: relative;
+  top: 135px;
   left: 50px;
   width: 300px;
   float: left;
@@ -66,7 +83,7 @@ body {
   margin-left: 300px;
   float: left;
   padding: 5px;
-  background-color: #c7daef;
+  background-color: #628395;
   column-count: 2;
   column-gap: 2px;
 }
@@ -78,6 +95,7 @@ body {
   padding: 20px 0;
   margin-bottom: -10px;
   margin-top: -10px;
+  color: whitesmoke;
 }
 
 #d-input {
@@ -86,14 +104,44 @@ body {
 }
 
 #area-calculate-button {
-  position: fixed;
-  left: 60%;
-  top: 490px;
-  font-size: 50px;
+  position: relative;
+  left: 80px;
+  top: 25px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 28px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  font-family: "calibri", sans-serif;
+  background-color: gold;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 9px #4085f5;
+  transition-duration: 0.1s;
+}
+
+#area-calculate-button:hover {background-color: yellowgreen;}
+
+#area-calculate-button:active {
+  background-color: yellowgreen;
+  box-shadow: 3px 5px #2f64ba;
+  transform: translateY(4px);
 }
 
 #radius {
   display: none;
   font-size: 20px;
   font-family: "palatino", serif;
+}
+
+#area-result-section {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 2px solid black;
+  background-color: mediumturquoise;
 }
