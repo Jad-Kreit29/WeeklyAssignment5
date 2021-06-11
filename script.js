@@ -30,13 +30,15 @@ function areaCalculate () {
   alert(area)
 }
 
+document.getElementById('d-input').addEventListener('focusout', test)
+
 function test () {
   dInput = document.getElementById('d-input').value
   dInput = parseInt(dInput)
   radius = dInput / 2
   document.getElementById('radius').style.display = 'block'
   document.getElementById('radius-result').innerHTML = radius
-  if (document.getElementById('d-input').value == '') {
+  if (document.getElementById('d-input').value === '') {
     document.getElementById('radius').style.display = 'none'
   }
 }
