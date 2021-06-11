@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="A website that calculates both the area and circumferance of a circle">
+    <meta name="keywords" content="VAS, website">
+    <meta name="author" content="J. Kreit">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Area/Circumferance Calculator </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <p><i class="arrow" id="right"></i></p>
+      <p><i class="arrow" id="left"></i></p>
+    </div>
+    <h1 id="title"><span id="page">Area</span> of a Circle Calculator</h1>
+    <div class="images-section">
+      <img src="./images/circle-diagram.png" alt="Labeled diagram of the area of a circle"
+      id="circle-diagram">
+      <img src="./images/area-formula.png" alt="Image of Area of Circle Formula" width="200px" id="formula-image1">
+    </div>
+    <br style="clear: both;"><br>
+    <div id="area-input-section">
+      <p class="value-header">d = </p>
+      <input type="text" onfocus="this.value=''" value="Enter Value" id="d-input" name="Value of Diameter" onfocusout="test()">
+      <p id="radius">r = <span id="radius-result"></span></p>
+    </div>
+    <button id="area-calculate-button">Calculate!</button><br>
+    <div id="area-result-section">
+      <p style="text-align:center">Test</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

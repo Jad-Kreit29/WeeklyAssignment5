@@ -1,0 +1,100 @@
+body {
+  background-color: #f8f8ff;
+  transition-duration: 0.3s;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 15px;
+  transition-duration: 0.4s;
+}
+
+.arrow:hover {
+  border: solid gray;
+  border-width: 0 15px 15px 0;
+}
+
+#right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: fixed;
+  left: 96%;
+  top: 45%;
+}
+
+#left {
+  display: none;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: fixed;
+  right: 96%;
+  top: 45%;
+}
+
+#title {
+  text-align: center;
+  font-size: 35px;
+  font-family: "calibri", sans-serif;
+  text-decoration: underline;
+}
+
+.images-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 725px;
+}
+
+#circle-diagram {
+  width: 360px;
+  float: left;
+}
+
+#formula-image1 {
+  position: relative;
+  top: 110px;
+  left: 50px;
+  width: 300px;
+  float: left;
+}
+
+#area-input-section {
+  width: 30%;
+  border: 2px solid black;
+  margin-left: 300px;
+  float: left;
+  padding: 5px;
+  background-color: #c7daef;
+  column-count: 2;
+  column-gap: 2px;
+}
+
+.value-header {
+  margin-top: 0;
+  text-align: center;
+  font-size: 100px;
+  font-family: "palatino", serif;
+  padding: 20px 0;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+#d-input {
+  margin-top: 45px;
+  text-align: center;
+}
+
+#area-calculate-button {
+  position: fixed;
+  left: 60%;
+  top: 490px;
+  font-size: 50px;
+}
+
+#radius {
+  display: none;
+  font-size: 20px;
+  font-family: "palatino", serif;
+}
