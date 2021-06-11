@@ -43,25 +43,25 @@ document.getElementById('area-calculate-button').addEventListener('click', areaC
 
 function areaCalculate () {
   if (page === 1) {
-  dInput = document.getElementById('d-input').value
-  dInput = parseInt(dInput)
-  radius = dInput / 2
-  area = Math.PI * radius ** 2
-  document.getElementById('area-result').innerHTML = area
-  document.getElementById('radius-result').innerHTML = radius
-  document.getElementById('area-result-section').style.display = 'block'
-  document.getElementById('formula1').style.display = 'block'
-  document.getElementById('formula2').style.display = 'none'
+    dInput = document.getElementById('d-input').value
+    dInput = parseInt(dInput)
+    radius = dInput / 2
+    area = Math.PI * radius ** 2
+    document.getElementById('area-result').innerHTML = area
+    document.getElementById('radius-result').innerHTML = radius
+    document.getElementById('area-result-section').style.display = 'block'
+    document.getElementById('formula1').style.display = 'block'
+    document.getElementById('formula2').style.display = 'none'
   } else if (page === 2) {
-  dInput = document.getElementById('d-input').value
-  dInput = parseInt(dInput)
-  radius = dInput / 2
-  circumferance = 2 * Math.PI * radius
-  document.getElementById('area-result2').innerHTML = circumferance
-  document.getElementById('radius-result2').innerHTML = radius
-  document.getElementById('area-result-section').style.display = 'block'
-  document.getElementById('formula1').style.display = 'none'
-  document.getElementById('formula2').style.display = 'block'
+    dInput = document.getElementById('d-input').value
+    dInput = parseInt(dInput)
+    radius = dInput / 2
+    circumferance = 2 * Math.PI * radius
+    document.getElementById('area-result2').innerHTML = circumferance
+    document.getElementById('radius-result2').innerHTML = radius
+    document.getElementById('area-result-section').style.display = 'block'
+    document.getElementById('formula1').style.display = 'none'
+    document.getElementById('formula2').style.display = 'block'
   }
 }
 

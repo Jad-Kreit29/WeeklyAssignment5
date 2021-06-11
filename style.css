@@ -123,7 +123,7 @@ body {
   transition-duration: 0.1s;
 }
 
-#area-calculate-button:hover {background-color: yellowgreen;}
+#area-calculate-button:hover { background-color: yellowgreen; }
 
 #area-calculate-button:active {
   background-color: yellowgreen;
