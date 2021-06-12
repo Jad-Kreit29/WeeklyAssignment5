@@ -14,14 +14,23 @@ body {
 .arrow:hover {
   border: solid gray;
   border-width: 0 15px 15px 0;
+  text-decoration: underline;
 }
 
 #right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   position: fixed;
-  left: 96%;
+  left: 94.7%;
   top: 45%;
+}
+
+#circumferance-page-title {
+  position: fixed;
+  left: 93.2%;
+  top: 51%;
+  font-size: 15px;
+  font-family: "calibri", sans-serif;
 }
 
 #left {
@@ -29,13 +38,22 @@ body {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   position: fixed;
-  right: 96%;
+  right: 94.7%;
   top: 45%;
+}
+
+#area-page-title {
+  display: none;
+  position: fixed;
+  right: 95.7%;
+  top: 51%;
+  font-size: 15px;
+  font-family: "calibri", sans-serif;
 }
 
 #title {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   font-family: "calibri", sans-serif;
   text-decoration: underline;
 }
@@ -119,7 +137,7 @@ body {
   background-color: gold;
   border: none;
   border-radius: 15px;
-  box-shadow: 5px 9px #4085f5;
+  box-shadow: 5px 6px #4085f5;
   transition-duration: 0.1s;
 }
 
@@ -127,7 +145,7 @@ body {
 
 #area-calculate-button:active {
   background-color: yellowgreen;
-  box-shadow: 3px 5px #2f64ba;
+  box-shadow: 3px 3px #2f64ba;
   transform: translateY(4px);
 }
 
@@ -143,5 +161,6 @@ body {
   margin-right: auto;
   width: 50%;
   border: 2px solid black;
+  padding: 10px;
   background-color: mediumturquoise;
 }

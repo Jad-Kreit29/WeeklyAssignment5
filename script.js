@@ -9,7 +9,9 @@ document.getElementById('right').onclick = movePageRight
 function movePageRight () {
   document.body.style.backgroundColor = '#ffbc42'
   document.getElementById('left').style.display = 'block'
+  document.getElementById('area-page-title').style.display = 'block'
   document.getElementById('right').style.display = 'none'
+  document.getElementById('circumferance-page-title').style.display = 'none'
   document.getElementById('page').innerHTML = 'Circumferance'
   document.getElementById('formula-image1').style.display = 'none'
   document.getElementById('formula-image2').style.display = 'block'
@@ -27,7 +29,9 @@ document.getElementById('left').onclick = movePageLeft
 function movePageLeft () {
   document.body.style.backgroundColor = 'ghostwhite'
   document.getElementById('left').style.display = 'none'
+  document.getElementById('area-page-title').style.display = 'none'
   document.getElementById('right').style.display = 'block'
+  document.getElementById('circumferance-page-title').style.display = 'block'
   document.getElementById('page').innerHTML = 'Area'
   document.getElementById('formula-image1').style.display = 'block'
   document.getElementById('formula-image2').style.display = 'none'
