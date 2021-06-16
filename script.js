@@ -51,7 +51,7 @@ function calculate () {
     dInput = parseInt(dInput)
     radius = dInput / 2
     area = Math.PI * radius ** 2
-    area = area.toFixed (2)
+    area = area.toFixed(2)
     document.getElementById('area-result').innerHTML = area
     document.getElementById('radius-result').innerHTML = radius
     document.getElementById('result-section').style.display = 'block'
@@ -62,7 +62,7 @@ function calculate () {
     dInput = parseInt(dInput)
     radius = dInput / 2
     circumference = 2 * Math.PI * radius
-    circumference = circumference.toFixed (2)
+    circumference = circumference.toFixed(2)
     document.getElementById('area-result2').innerHTML = circumference
     document.getElementById('radius-result2').innerHTML = radius
     document.getElementById('result-section').style.display = 'block'
