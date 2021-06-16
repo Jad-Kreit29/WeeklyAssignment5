@@ -44,13 +44,14 @@ function movePageLeft () {
 }
 /* Listens for a click on the button 'calculate-button' and activates the function 'calculate' */
 document.getElementById('calculate-button').addEventListener('click', calculate)
-/* If the variable 'page' has a value equal to 1, then the program will perform the area of a circle calculation. Whatever is typed into the 'd-input' input box as the diameter will be turned into an integer and assigned to the variable dInput. The value of dInput will be divided by 2 and assigned to the variable 'radius'. Then, the program will calculate PI times the radius value squared and assign the final result to the variable 'area'. The result section will be displayed and the formula, with the variable of the radius placed into the innerHTML, as well as the final result of the area will be displayed. The area of a circle 'formula1' will be displayed into the result box, and the circumference 'formula2' will be hidden. If the variable 'page' has a value equal to 2, then the program will perform the circumference of a circle calculation. The lines of code are mostly the same, except the program will calculate 2 by PI by the radius and assign the final result to the 'circumference' variable and display that result into the result-section under the circumference 'formula2'. */
+/* If the variable 'page' has a value equal to 1, then the program will perform the area of a circle calculation. Whatever is typed into the 'd-input' input box as the diameter will be turned into an integer and assigned to the variable dInput. The value of dInput will be divided by 2 and assigned to the variable 'radius'. Then, the program will calculate PI times the radius value squared and assign the final result to the variable 'area'. That value will be rounded to two decimal places. The result section will be displayed and the formula, with the variable of the radius placed into the innerHTML, as well as the final result of the area will be displayed. The area of a circle 'formula1' will be displayed into the result box, and the circumference 'formula2' will be hidden. If the variable 'page' has a value equal to 2, then the program will perform the circumference of a circle calculation. The lines of code are mostly the same, except the program will calculate 2 by PI by the radius and assign the final result to the 'circumference' variable, rounding the result to two decimal places, and display that result into the result-section under the circumference 'formula2'. */
 function calculate () {
   if (page === 1) {
     dInput = document.getElementById('d-input').value
     dInput = parseInt(dInput)
     radius = dInput / 2
     area = Math.PI * radius ** 2
+    area = area.toFixed (2)
     document.getElementById('area-result').innerHTML = area
     document.getElementById('radius-result').innerHTML = radius
     document.getElementById('result-section').style.display = 'block'
@@ -61,6 +62,7 @@ function calculate () {
     dInput = parseInt(dInput)
     radius = dInput / 2
     circumference = 2 * Math.PI * radius
+    circumference = circumference.toFixed (2)
     document.getElementById('area-result2').innerHTML = circumference
     document.getElementById('radius-result2').innerHTML = radius
     document.getElementById('result-section').style.display = 'block'
